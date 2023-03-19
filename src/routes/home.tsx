@@ -1,5 +1,6 @@
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import { Button, Center, Heading, HStack, VStack } from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
 
 function Home() {
   return (
@@ -12,9 +13,15 @@ function Home() {
           </VStack>
         </Heading>
         <HStack>
-          <Button size="xl" colorScheme="teal" rightIcon={<ArrowForwardIcon />}>
-            C'est parti
-          </Button>
+          <Link to="/character">
+            <Button
+              size="xl"
+              colorScheme="teal"
+              rightIcon={<ArrowForwardIcon />}
+            >
+              C'est parti
+            </Button>
+          </Link>
         </HStack>
       </VStack>
     </Center>
