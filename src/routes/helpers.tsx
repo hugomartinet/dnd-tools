@@ -14,7 +14,5 @@ interface LazyPageProps {
 }
 
 export function LazyPage(props: LazyPageProps) {
-  return (
-    <React.Suspense fallback={<Loader />}>{props.component}</React.Suspense>
-  )
+  return <React.Suspense fallback={<Loader />}>{props.component}</React.Suspense>
 }

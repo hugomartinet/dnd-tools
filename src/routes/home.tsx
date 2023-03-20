@@ -14,11 +14,7 @@ function Home() {
         </Heading>
         <HStack>
           <Link to="/character">
-            <Button
-              size="xl"
-              colorScheme="teal"
-              rightIcon={<ArrowForwardIcon />}
-            >
+            <Button size="xl" colorScheme="teal" rightIcon={<ArrowForwardIcon />}>
               C'est parti
             </Button>
           </Link>
