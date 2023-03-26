@@ -1,11 +1,18 @@
 import React from 'react'
 import { createBrowserRouter } from 'react-router-dom'
-import { LazyPage } from './helpers'
-import Home from './home'
+import { Layout } from './helpers'
 
-const CharacterList = React.lazy(() => import('./character'))
+const CharacterCreate = React.lazy(() => import('./create-character'))
 
 export const router = createBrowserRouter([
-  { path: '/', element: <Home /> },
-  { path: '/character', element: <LazyPage component={<CharacterList />} /> },
+  {
+    path: '/',
+    element: <Layout />,
+    children: [
+      {
+        path: '/create-character',
+        element: <CharacterCreate />,
+      },
+    ],
+  },
 ])
