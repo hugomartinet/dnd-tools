@@ -1,4 +1,4 @@
-import CharacterForm from '../features/character-form/components'
+import { CharacterForm } from '../features/character-form'
 
 function CreateCharacter() {
   return <CharacterForm />

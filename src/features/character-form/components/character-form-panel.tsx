@@ -1,5 +1,5 @@
 import { Button, Heading, HStack, Spacer, VStack } from '@chakra-ui/react'
-import { RaceForm } from '../../race/components/race-form'
+import { RaceForm } from '../../race'
 import { useCharacterFormContext } from '../context'
 
 export function CharacterFormPanel() {

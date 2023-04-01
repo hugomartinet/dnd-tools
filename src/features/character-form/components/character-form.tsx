@@ -4,7 +4,7 @@ import { CharacterFormContextProvider } from '../context'
 import { CharacterFormPanel } from './character-form-panel'
 import { CharacterFormSidebar } from './character-form-sidebar'
 
-function CharacterForm() {
+export function CharacterForm() {
   return (
     <CharacterFormContextProvider>
       <Formik initialValues={{}} onSubmit={console.log}>
@@ -20,5 +20,3 @@ function CharacterForm() {
     </CharacterFormContextProvider>
   )
 }
-
-export default CharacterForm
