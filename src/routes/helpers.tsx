@@ -1,7 +1,7 @@
 import { Center, Flex, Spinner } from '@chakra-ui/react'
+import { Header } from 'components/header'
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import { Header } from '../components/header'
 
 function Loader() {
   return (

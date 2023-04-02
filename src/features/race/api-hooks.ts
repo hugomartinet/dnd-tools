@@ -1,4 +1,4 @@
-import { useAPIQuery } from '../../services/api'
+import { useAPIQuery } from 'services/api'
 import { type Race } from './types'
 
 export function useRaces() {

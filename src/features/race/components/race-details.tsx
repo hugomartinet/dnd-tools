@@ -13,9 +13,9 @@ import {
   useDisclosure,
   VStack,
 } from '@chakra-ui/react'
+import { modifiersAsText } from 'features/ability/helpers'
 import { type PropsWithChildren } from 'react'
 import { TbHelp } from 'react-icons/tb'
-import { modifiersAsText } from '../../ability/helpers'
 import { type Race } from '../types'
 import { RaceImage } from './race-image'
 
