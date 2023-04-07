@@ -1,9 +1,7 @@
-import { CardBody, CardHeader, Heading, SimpleGrid, Text } from '@chakra-ui/react'
+import { CardHeader, Heading, SimpleGrid } from '@chakra-ui/react'
 import SelectableCard from 'components/selectable-card'
-import { modifiersAsText } from 'features/ability/helpers'
 import { useField } from 'formik'
 import { useRaces } from '../api-hooks'
-import { RaceDetails } from './race-details'
 import { RaceImage } from './race-image'
 
 export function RaceForm() {
@@ -22,13 +20,6 @@ export function RaceForm() {
               {race.name}
             </Heading>
           </CardHeader>
-
-          <CardBody display="inline-flex" alignItems="center" paddingTop={0}>
-            <Text flex={1} fontSize="sm" noOfLines={1}>
-              {modifiersAsText(race.modifiers)}
-            </Text>
-            <RaceDetails race={race} />
-          </CardBody>
         </SelectableCard>
       ))}
     </SimpleGrid>

@@ -13,7 +13,6 @@ import {
   useDisclosure,
   VStack,
 } from '@chakra-ui/react'
-import { modifiersAsText } from 'features/ability/helpers'
 import { type PropsWithChildren } from 'react'
 import { TbHelp } from 'react-icons/tb'
 import { type Race } from '../types'
@@ -25,7 +24,7 @@ interface RaceDetailsProps {
 
 export function RaceDetails({ race }: RaceDetailsProps) {
   const { isOpen, onOpen, onClose } = useDisclosure()
-  const { name, modifiers, size, speed } = race
+  const { name, size, speed } = race
 
   return (
     <>
@@ -50,7 +49,7 @@ export function RaceDetails({ race }: RaceDetailsProps) {
               <SimpleGrid columns={2} spacing={6}>
                 <Box>
                   <FieldHeading>Augmentation de caractéristiques</FieldHeading>
-                  <Text>{modifiersAsText(modifiers)}</Text>
+                  <Text>TODO</Text>
                 </Box>
 
                 <Box>

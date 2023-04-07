@@ -1,15 +1,7 @@
-export function modifiersAsText(modifiers: Record<string, number | number[]>): string {
-  return Object.entries(modifiers)
-    .map(([key, value]) => {
-      if (typeof value === 'number') {
-        return modifierAsText(key, value)
-      }
-      return value.map(singleValue => modifierAsText(key, singleValue)).join(', ')
-    })
-    .join(', ')
+export function signed(value: number): string {
+  return `${value >= 0 ? '+' : ''}${value}`
 }
 
-function modifierAsText(key: string, value: number) {
-  const name = (key.charAt(0).toUpperCase() + key.slice(1)).replace('-', ' ')
-  return `${name} ${value >= 0 ? '+' : ''}${value}`
+export function getModifier(score: number) {
+  return signed(Math.floor((score - 10) / 2))
 }
