@@ -1,7 +1,7 @@
 import React, { useCallback, useContext, useMemo, useState, type PropsWithChildren } from 'react'
 
-export const steps = ['Race', 'Classe', 'Historique', 'Compétences', 'Equipement'] as const
-type Step = (typeof steps)[number]
+export const steps = ['Race', 'Classe', 'Historique', 'Caractéristiques', 'Maîtrises', 'Equipement'] as const
+export type Step = (typeof steps)[number]
 
 interface CharacterFormContextValue {
   currentStep: Step

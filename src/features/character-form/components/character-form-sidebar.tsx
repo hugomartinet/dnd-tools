@@ -1,12 +1,14 @@
 import { Button, Icon, VStack } from '@chakra-ui/react'
-import { TbBook, TbBow, TbDice6, TbSwords, TbUser } from 'react-icons/tb'
-import { steps, useCharacterFormContext } from '../context'
+import { type IconType } from 'react-icons'
+import { TbBook, TbBow, TbDice6, TbHammer, TbSwords, TbUser } from 'react-icons/tb'
+import { steps, useCharacterFormContext, type Step } from '../context'
 
-const stepIcons = {
+const stepIcons: Record<Step, IconType> = {
   Race: TbUser,
   Classe: TbSwords,
   Historique: TbBook,
-  Compétences: TbDice6,
+  Caractéristiques: TbDice6,
+  Maîtrises: TbHammer,
   Equipement: TbBow,
 }
 

@@ -11,7 +11,7 @@ export function RaceForm() {
   if (races === undefined) return null
 
   return (
-    <SimpleGrid columns={3}>
+    <SimpleGrid columns={3} width="full">
       {races.map(race => (
         <SelectableCard key={race.id} selected={race.id === value} onSelect={() => setValue(race.id)}>
           <CardHeader display="inline-flex" alignItems="center">

@@ -1,6 +1,8 @@
 import { Button, Heading, HStack, Spacer, VStack } from '@chakra-ui/react'
 import { AbilityForm } from 'features/ability'
+import { BackgroundForm } from 'features/background/components/background-form'
 import { ClassForm } from 'features/class'
+import { ProficiencyForm } from 'features/proficiency'
 import { RaceForm } from 'features/race'
 import { useCharacterFormContext } from '../context'
 
@@ -13,8 +15,12 @@ export function CharacterFormPanel() {
         return <RaceForm />
       case 'Classe':
         return <ClassForm />
-      case 'Compétences':
+      case 'Historique':
+        return <BackgroundForm />
+      case 'Caractéristiques':
         return <AbilityForm />
+      case 'Maîtrises':
+        return <ProficiencyForm />
       default:
         return null
     }
