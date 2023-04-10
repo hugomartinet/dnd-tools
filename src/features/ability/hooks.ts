@@ -62,13 +62,14 @@ export function useAbilityInputOptions(): Option[] {
     () =>
       throws
         ?.filter(_throw => typeof _throw === 'number')
-        .map(_throw => ({ value: _throw!, label: _throw!.toString() })) ?? [],
+        .map(String)
+        .map(_throw => ({ value: _throw, label: _throw })) ?? [],
     [throws]
   )
   const selectedOptions = useMemo(() => Object.values(abilities ?? {}), [abilities])
 
   return disableSelectedOptions(
-    sortBy(options, option => option.value),
+    sortBy(options, option => Number(option.value)),
     selectedOptions
   )
 }

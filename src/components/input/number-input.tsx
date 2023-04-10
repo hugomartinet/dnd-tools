@@ -28,7 +28,7 @@ export function NumberInput({ name, ...props }: NumberInputProps) {
   )
 
   return (
-    <ChakraNumberInput {...props} value={debouncedValue} onChange={setDebouncedValue} backgroundColor="white">
+    <ChakraNumberInput {...props} value={debouncedValue} onChange={setDebouncedValue}>
       <NumberInputField />
       <NumberInputStepper>
         <NumberIncrementStepper />

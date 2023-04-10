@@ -1,9 +1,12 @@
-import { Heading, VStack } from '@chakra-ui/react'
+import { HStack } from '@chakra-ui/react'
+import { OtherProficiencyForm } from './other-proficiency-form'
+import { SkillProficiencyForm } from './skill-proficiency-form'
 
 export function ProficiencyForm() {
   return (
-    <VStack spacing={8}>
-      <Heading size="lg">Compétences</Heading>
-    </VStack>
+    <HStack spacing={40} width="full" align="start">
+      <SkillProficiencyForm />
+      <OtherProficiencyForm />
+    </HStack>
   )
 }

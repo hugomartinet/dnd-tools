@@ -1,5 +1,6 @@
 export interface Option {
-  value: number | string
+  value: string
   label: string
   disabled?: boolean
+  optionGroup?: string
 }

@@ -11,4 +11,5 @@ export interface CharacterFormValues {
     charisme?: number | null
   }
   throws?: (number | null | undefined)[]
+  proficiencies?: (string | undefined)[]
 }

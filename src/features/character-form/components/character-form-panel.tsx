@@ -1,6 +1,6 @@
 import { Button, Heading, HStack, Spacer, VStack } from '@chakra-ui/react'
 import { AbilityForm } from 'features/ability'
-import { BackgroundForm } from 'features/background/components/background-form'
+import { BackgroundForm } from 'features/background'
 import { ClassForm } from 'features/class'
 import { ProficiencyForm } from 'features/proficiency'
 import { RaceForm } from 'features/race'

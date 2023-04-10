@@ -8,7 +8,10 @@ import { CharacterFormSidebar } from './character-form-sidebar'
 export function CharacterForm() {
   return (
     <CharacterFormContextProvider>
-      <Formik<CharacterFormValues> initialValues={{}} onSubmit={console.log}>
+      <Formik<CharacterFormValues>
+        initialValues={{ race: 'humain', class: 'barde', background: 'artiste' }}
+        onSubmit={console.log}
+      >
         {() => (
           <form style={{ flex: 1, overflow: 'hidden' }}>
             <Flex width="full" height="full" backgroundColor="gray.50">

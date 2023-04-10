@@ -3,11 +3,11 @@ import { type Option } from './types'
 
 describe('disableSelectedOptions()', () => {
   const options: Option[] = [
-    { value: 12, label: '12', disabled: false },
-    { value: 12, label: '12', disabled: false },
-    { value: 13, label: '13', disabled: false },
-    { value: 14, label: '14', disabled: false },
-    { value: 14, label: '14', disabled: false },
+    { value: '12', label: '12', disabled: false },
+    { value: '12', label: '12', disabled: false },
+    { value: '13', label: '13', disabled: false },
+    { value: '14', label: '14', disabled: false },
+    { value: '14', label: '14', disabled: false },
   ]
 
   it.each`

@@ -6,5 +6,6 @@ export interface Race {
   size: string
   speed: number
   modifiers: Partial<Record<Ability, number> & { 'au-choix': number[] }>
+  proficiencies: string[]
   traits: string[]
 }
