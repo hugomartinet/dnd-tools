@@ -1,5 +1,5 @@
 import { CardBody, Heading, SimpleGrid, VStack } from '@chakra-ui/react'
-import SelectableCard from 'components/selectable-card'
+import { SelectableCard } from 'components/selectable-card'
 import { useAbilityFormMode } from '../hooks'
 import { AbilityInput } from './ability-input'
 import { AbilityPoints } from './ability-points'

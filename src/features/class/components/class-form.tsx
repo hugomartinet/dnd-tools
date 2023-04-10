@@ -1,5 +1,5 @@
 import { CardHeader, Heading, SimpleGrid } from '@chakra-ui/react'
-import SelectableCard from 'components/selectable-card'
+import { SelectableCard } from 'components/selectable-card'
 import { useField } from 'formik'
 import { useClasses } from '../api-hooks'
 import { ClassImage } from './class-image'

@@ -5,7 +5,7 @@ interface SelectableCardProps extends CardProps {
   onSelect: () => void
 }
 
-function SelectableCard({ selected, onSelect, ...props }: SelectableCardProps) {
+export function SelectableCard({ selected, onSelect, ...props }: SelectableCardProps) {
   return (
     <Card
       {...props}
@@ -17,5 +17,3 @@ function SelectableCard({ selected, onSelect, ...props }: SelectableCardProps) {
     />
   )
 }
-
-export default SelectableCard
